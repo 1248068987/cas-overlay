@@ -1,0 +1,14 @@
+{
+  "@class" : "org.apereo.cas.support.oauth.services.OAuthRegisteredService",
+  "clientId": "clientid",
+  "clientSecret": "clientSecret",
+  "serviceId" : "^(https?|imaps?|http?)://.*",
+  "name" : "OAuthService",
+  "id" : 100,
+  "bypassApprovalPrompt": false,
+  "generateRefreshToken": false,
+  "attributeReleasePolicy": {
+    "@class": "org.apereo.cas.services.ReturnAllAttributeReleasePolicy",
+    "allowedAttributes": [ "java.util.ArrayList", [ "id",  "username", "realname", "gender", "email", "qq", "phone", "motherTongue", "birthday", "area",  "phone", "contact", "school", "homepage", "roleid", "role", "deleteflag", "creationdate", "updatetime", "description", "portrait", "college", "class", "studentID", "flag", "sysId", "regip", "thirdId" ] ]
+  }
+}
